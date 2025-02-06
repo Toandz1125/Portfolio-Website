@@ -1,0 +1,15 @@
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-in-image {
+  animation: fadeInImage 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  will-change: transform, opacity;
+}

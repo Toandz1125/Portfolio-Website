@@ -1,0 +1,27 @@
+/* Animation utility classes */
+.animate-fade {
+  animation: fadeIn 800ms ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 1000ms ease-in-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 1000ms ease-in-out forwards;
+}
+
+.animate-scale {
+  animation: scaleIn 900ms ease-in-out forwards;
+}
+
+.animate-rotate {
+  animation: rotateIn 1200ms ease-in-out forwards;
+}
+
+/* Animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }

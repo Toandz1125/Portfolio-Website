@@ -1,0 +1,76 @@
+/* Glowing social icons animation */
+.social-icon {
+  font-size: 1em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color),
+    0 0 40px var(--glow-color), 0 0 80px var(--glow-color);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0 0px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 20px var(--glow-color), 0 0 40px var(--glow-color),
+    0 0 60px var(--glow-color), 0 0 80px var(--glow-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  --glow-color: #0072ff;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #18191f;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.social-icon svg {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 8px var(--glow-color)) 
+          drop-shadow(0 0 16px var(--glow-color)) 
+          drop-shadow(0 0 24px var(--glow-color));
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--glow-color), 0 0 30px var(--glow-color), 
+              0 0 60px var(--glow-color), 0 0 100px var(--glow-color);
+}
+
+.social-icon:hover svg {
+  filter: drop-shadow(0 0 12px var(--glow-color)) 
+         drop-shadow(0 0 24px var(--glow-color)) 
+         drop-shadow(0 0 36px var(--glow-color));
+}
+
+.social-icon.github {
+  animation-delay: 0s;
+  --glow-color: #6e5494;
+}
+
+.social-icon.linkedin {
+  animation-delay: 0.3s;
+  --glow-color: #0077b5;
+}
+
+.social-icon.mail {
+  animation-delay: 0.7s;
+  --glow-color: #ea4335;
+}
+
+.social-icon.file {
+  animation-delay: 0.1s;
+  --glow-color: #00ff88;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

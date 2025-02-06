@@ -1,0 +1,38 @@
+/* Smooth transitions for interactive elements */
+.transition-smooth {
+  transition-duration: 800ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 700ms ease-in-out;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Button animations */
+.button-animate {
+  transition: all 600ms ease-in-out;
+}
+.button-animate:hover {
+  transform: translateY(-2px);
+}
+
+/* Card animations */
+.card-animate {
+  transition: all 800ms ease-in-out;
+}
+.card-animate:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation animations */
+.nav-item {
+  transition: all 500ms ease-in-out;
+}
+.nav-item:hover {
+  transform: translateY(-1px);
+}
