@@ -49,7 +49,7 @@ To run this project on your machine, follow these steps:
 ## Contribution
 If you would like to contribute to this project, please create a pull request or open an issue to discuss the changes you would like to make.
 
-## Liên hệ
+## Contact
 If you have any questions, please contact me via email: naithetoan2005@gmail.com.
 
 ## License
