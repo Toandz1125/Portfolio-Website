@@ -53,5 +53,5 @@ If you would like to contribute to this project, please create a pull request or
 If you have any questions, please contact me via email: naithetoan2005@gmail.com.
 
 ## License
-Author: Mai Toan
-This project is licensed under Mai Toan.
+- Author: Mai Toan
+- This project is licensed under Mai Toan.
